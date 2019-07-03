@@ -8,17 +8,19 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }} {{ app()->version() }}</title>
+        <title>{{ config('app.name', 'School Management') }} </title>
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+         <link rel="stylesheet" href="{{ asset('css/bulma.min.css') }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
         <div id="app">
             <nav class="navbar has-shadow">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a href="{{ url('/') }}" class="navbar-item">{{ config('app.name', 'Laravel') }}</a>
+                        <a href="{{ url('/') }}" class="navbar-item">School Management</a>
 
                         <div class="navbar-burger burger" data-target="navMenu">
                             <span></span>
@@ -30,7 +32,7 @@
                     <div class="navbar-menu" id="navMenu">
                         <div class="navbar-start"></div>
 
-                        <div class="navbar-end">
+                        <div class="navbar navbar-dark">
                             @if (Auth::guest())
                                 <a class="navbar-item " href="{{ route('login') }}">Login</a>
                                 <a class="navbar-item " href="{{ route('register') }}">Register</a>

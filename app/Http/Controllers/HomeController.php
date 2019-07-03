@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+// $user = $_POST['user'];
 class HomeController extends Controller
 {
     /**
@@ -21,8 +21,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+     public function indexclark()
     {
-        return view('home');
+       return view('clark/dashboard');
+    }
+     public function index()
+    {
+       return view('home');
     }
 }

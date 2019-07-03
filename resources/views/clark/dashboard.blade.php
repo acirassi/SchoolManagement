@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('../layouts.app')
 
 @section('content')
     <div class="container">
@@ -12,7 +12,7 @@
                     </header>
 
                     <div class="card-content">
-                        {{ Auth::user()->name }}, you are logged in!
+                        {{ Auth::user()->name }}  Clark, you are logged in!
                     </div>
                 </nav>
             </div>

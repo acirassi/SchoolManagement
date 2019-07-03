@@ -10,7 +10,7 @@
                     </header>
 
                     <div class="card-content">
-                        You are logged in!
+                        <?php echo e(Auth::user()->name); ?>, you are logged in!
                     </div>
                 </nav>
             </div>
